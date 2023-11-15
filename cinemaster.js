@@ -162,5 +162,10 @@ document.addEventListener("DOMContentLoaded", function () {
         thankYou.style.display = "block";
         nameInput.value = "";
         reviewInput.value = "";
+
+        // Hide the "Thank you" message after a short delay
+        setTimeout(function () {
+            thankYou.style.display = "none";
+        }, 3000);
     }
 });
