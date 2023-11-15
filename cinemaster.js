@@ -147,7 +147,9 @@ document.getElementById('submit-review-button').addEventListener('click', submit
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const submitReviewButton = document.getElementById("submit-review-button")
+    const submitReviewButton = document.getElementById("submit-review-button");
+    const nameInput = document.getElementById("name-input");
+    const reviewInput = document.getElementById("review-input");
     const thankYou = document.getElementById("thank-you");
 
     submitReviewButton.addEventListener("click", function () {
@@ -155,7 +157,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     
     function submitGlobalReview() {
-        const reviewInput = document.getElementById("review-input").value;
+        const movieName = nameInput.value;
+        const userReview = reviewInput.value;
         thankYou.style.display = "block";
+        nameInput.value = "";
+        reviewInput.value = "";
     }
 });
