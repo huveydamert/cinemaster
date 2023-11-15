@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="cinemaster.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cinemaster</h1>
+        <button id="dark-mode-toggle">Dark Mode</button>
+    </header>
+
+    <div id="main-container">
+        <label for="search-input">Search for a movie:</label>
+        <input type="text" id="search-input" placeholder="Enter movie title">
+        <button id="search-button">Search</button>
+
+        <div id="movie-list-container">
+            <div id="movie-list"></div>      
+        </div>
+    </div>
+
+<!-- Submit a Review Section -->
+<section id="submit-review-section">
+    <h2>Submit a Review</h2>
+    <div class="name-container">
+        <input type="text" id="name-input" placeholder="The movie name..">
+        </div>
+    <div class="review-form-container">
+        <input type="text" id="review-input" placeholder="Your review..">
+        <button id="submit-review-button">Submit</button>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2023 Cinemaster. All rights reserved.</p>
+    </footer>
+
+    <script src="cinemaster.js"></script>
+</body>
+</html>

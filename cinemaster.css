@@ -1,0 +1,222 @@
+body {
+    font-family: comic;
+    background-color: #ffeed1;
+    margin: 0;
+    transition: background-color 0.5 ease;
+}
+
+header {
+    text-align: center;
+    background-color: #c83288;
+    padding: 20px 0;
+    border-radius: 20px;
+}
+
+header h1 {
+    color: #ff9f6e;
+    margin: 0;
+    font-size: 80px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 0%;
+}
+
+#main-container {
+    max-width: auto;
+    max-height: max-content;
+    margin: auto;
+    background-color: #ffeed1;
+    padding: 200px;
+    border-radius: 8px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+label[for="search-input"] {
+    color: #41133c;
+    font-size: 40px;
+}
+
+#search-button {
+    padding: 20px 30px;
+    font-size: 20px;
+    background-color: #de406e;
+    color: #41133c;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+#search-button:hover {
+    background-color: #ff9f6e;
+}
+
+#movie-list-container {
+    margin-top: 20px;
+}
+
+.movie {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.movie h2, .movie p {
+    padding: 10px;
+}
+
+.movie {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Define the transition property */
+}
+
+.movie.loaded {
+    opacity: 1;
+}
+
+#submit-review-section {
+    color: #41133c;
+    background-color: #fbe3b8;
+    padding: 20px;
+}
+
+#name-input {
+    width: 25%;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#review-input {
+    width: 50%;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#submit-review-button {
+    padding: 20px 30px;
+    font-size: 20px;
+    background-color: #f3618b;
+    color: #41133c;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+#submit-review-button:hover {
+    background-color: #ff9f6e;
+}
+
+footer {
+    text-align: center;
+    background-color: #c83288;
+    color: #ff9f6e;
+    border-radius: 20px;
+    margin-bottom: 0;
+    padding: 2.5px;
+}
+
+/* Add dark mode styles */
+#dark-mode-toggle {
+    background-color: #531555;
+    color: #e48fed;
+    border-radius: 20px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #6e6455;
+}
+
+.dark-mode header {
+    background-color: #292b27; 
+}
+
+.dark-mode header h1 {
+    color: #edf1ec; 
+}
+
+.dark-mode #main-container {
+    background-color: #51574a;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.dark-mode footer {
+    background-color: #292b27;
+    color: #edf1ec;
+}
+
+.dark-mode #search-button {
+    background-color: #a6e8a1;
+}
+
+.dark-mode #search-button:hover {
+    background-color: #ff9f6e;
+}
+
+.dark-mode [for="search-input"] {
+    color: #1d1e1c;
+}
+
+
+.dark-mode #submit-review-section, h2 {
+    margin-top: 0%;
+}
+
+.dark-mode #submit-review-section {
+    background-color: #3c4036;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #1d1e1c;
+}
+
+.dark-mode #submit-review-button {
+    background-color: #a6e8a1;
+}
+
+.dark-mode #submit-review-button:hover {
+    background-color: #ff9f6e;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 600px) {
+    #search-input {
+        width: 100%;
+    }
+}
+
+body, h1, section {
+    margin: 0;
+    padding: 0;
+}
+
+.top-section, .bottom-section {
+    height: 100vh; /* Adjust the height as needed */
+}
