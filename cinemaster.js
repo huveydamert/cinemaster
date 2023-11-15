@@ -145,3 +145,17 @@ async function submitGlobalReview(reviewInput) {
 // Event listener for the global "Submit Review" button
 document.getElementById('submit-review-button').addEventListener('click', submitGlobalReview);
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const submitReviewButton = document.getElementById("submit-review-button")
+    const thankYou = document.getElementById("thank-you");
+
+    submitReviewButton.addEventListener("click", function () {
+        submitGlobalReview();
+    });
+    
+    function submitGlobalReview() {
+        const reviewInput = document.getElementById("review-input").value;
+        thankYou.style.display = "block";
+    }
+});
